@@ -23,6 +23,10 @@ GPR_PROJECT_PATH.append = "${CRATE_ROOT}/install/rclada/share/gprauto:${CRATE_RO
 LD_LIBRARY_PATH.append = "/opt/ros/foxy/lib"
 
 [[actions]]
+type = "post-fetch"
+command = ["./build.bash"]
+
+[[actions]]
 type = "pre-build"
 command = ["./build.bash"]
 
