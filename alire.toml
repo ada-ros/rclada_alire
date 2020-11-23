@@ -18,6 +18,8 @@ ros2_foxy = "*"
 RCLADA_INSTALL_DIR.set = "${CRATE_ROOT}/install"
 # Needed to locate project files here and in clients
 GPR_PROJECT_PATH.append = "${CRATE_ROOT}/install/rclada/share/gprauto:${CRATE_ROOT}/install/rclada_common/share/gpr:${CRATE_ROOT}/install/rosidl_generator_ada/share/gpr:${CRATE_ROOT}/install/rosidl_generator_ada/share/gprauto"
+# Needed to locate libraries
+LD_LIBRARY_PATH.append = "/opt/ros/foxy/lib"
 
 [[actions]]
 type = "pre-build"
